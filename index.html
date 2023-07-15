@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local-storg</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/alarg2550.css" media="(min-width:
+1441px)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/amedium992.css" media="(max-width:
+    990px)" media="(min-width: 760px)">
+    <link rel="stylesheet" href="./css/asmall768.css" media="(max-width:
+    760px)" media="(min-width: 420px)">
+    <link rel="stylesheet" href="./css/amobile425.css" media="(max-width:
+    420px)">
+</head>
+
+<body >
+
+
+    <div class="contan">
+        <div class="head">
+            <h2>Crud</h2>
+            <p>product management system</p>
+        </div>
+        <div class="input">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">create</button>
+        </div>
+        <div class="output">
+            <div class="serchblock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="serch">
+                <div class="btnserch">
+                    <button onclick="getsearchMood(this.id)" id="serchTitel">serch by Titel</button>
+                    <button onclick="getsearchMood(this.id)" id="serchCategory">serch by Category</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>Category</th>
+                    <th>updata</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>i</td>
+                        <td>title</td>
+                        <td>price</td>
+                        <td>taxes</td>
+                        <td>ads</td>
+                        <td>discount</td>
+                        <td>tota</td>
+                        <td>Count</td>
+                        <td>Category</td>
+                        <td><button id="updata">updata</button> </td>
+                        <td><button id="delete">delete</button> </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

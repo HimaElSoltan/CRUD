@@ -1,0 +1,125 @@
+body {
+    height: 150vh;
+    background-color: #222;
+    color: white;
+    font-family: 'sans-serif, Segoe UI', Tahoma, Geneva, Verdanaf;
+}
+
+
+.contan .head {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+.contan .input input,
+.contan .input button,
+.contan .price #total,
+.output .btnserch button,
+.output .serchblock input ,
+#deleteAll button {
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    background-color: #111;
+    color: #fff;
+    transform: scale(.9);
+}
+
+.contan .input input:focus,
+.contan .input button:focus,
+.output .serchblock input:focus,
+.output .btnserch button:focus {
+    background-color: #000;
+    transform: scale(1);
+    transition: all 2s;
+
+}
+
+.contan .price #total {
+    background-color: #a00d02;
+    padding-top: 10px;
+    text-align: center;
+    margin: 4px 0 0 0;
+    height: 23px;
+}
+
+.contan .price #total::before {
+    content: "total : ";
+}
+
+.contan .input button,
+.output button,
+.output .btnserch button,
+#deleteAll button {
+    text-align: center;
+    background-color: #470053;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.output {
+    margin: 4px 40px;
+}
+
+.output .serchblock input {
+    transform: scale(.95);
+}
+
+.output .btnserch {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+
+}
+
+.output .btnserch button {
+    width: 45%;
+
+}
+
+.contan .input button:hover,
+.output .btnserch button:hover,
+.output table td button:hover,
+#deleteAll button:hover {
+    background-color: #51025f;
+    letter-spacing: 2px;
+    transition: all 2s;
+}
+
+.output table td button:hover {
+    padding: 0;
+    letter-spacing: 1.5px;
+}
+
+.contan .input .price {
+    display: flex;
+    margin: 0 35px;
+}
+
+.output table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 2px0;
+}
+
+.output table th {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.output table td {
+    padding: 5px;
+}
+
+.output table td button {
+    padding: 0 5px;
+    border: 1px solid #51025f;
+    text-transform: uppercase;
+
+}
